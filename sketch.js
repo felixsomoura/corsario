@@ -197,7 +197,7 @@ function draw() {
   textFont('Work Sans');
   textSize (50);
   textStyle(BOLD);
-  text ((tabela.get(0,2)), f + 25, 50);
+  text ((tabela.get(params.magia,2)), f + 25, 50);
   
   stroke(139, 151, 250);
   strokeWeight(2);
