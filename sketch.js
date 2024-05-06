@@ -45,8 +45,8 @@ function draw() {
   
   let p0 = createP ('');
   
-  let m1 = createSpan(tabela.get(0,9));
-  let m2 = createSpan(tabela.get(0,10));
+  let m1 = createSpan(tabela.get(params.magia,9));
+  let m2 = createSpan(tabela.get(params.magia,10));
   
   m1.addClass('spanCorpoBold');
   m2.addClass('spanCorpo');
@@ -54,14 +54,14 @@ function draw() {
   m1.parent(p0);
   m2.parent(p0);
   
-  let p1 = createP(tabela.get(0,11));
-  let p2 = createP(tabela.get(0,12));
-  let p3 = createP(tabela.get(0,13));
-  let p4 = createP(tabela.get(0,14));
-  let pV = createP(tabela.get(0,15));
-  let p6 = createP(tabela.get(0,16));
-  let p7 = createP(tabela.get(0,17));
-  let p8 = createP(tabela.get(0,18));
+  let p1 = createP(tabela.get(params.magia,11));
+  let p2 = createP(tabela.get(params.magia,12));
+  let p3 = createP(tabela.get(params.magia,13));
+  let p4 = createP(tabela.get(params.magia,14));
+  let pV = createP(tabela.get(params.magia,15));
+  let p6 = createP(tabela.get(params.magia,16));
+  let p7 = createP(tabela.get(params.magia,17));
+  let p8 = createP(tabela.get(params.magia,18));
   
   p1.addClass('corpo');
   p2.addClass('corpoBold');
@@ -108,7 +108,7 @@ function draw() {
   textFont('Work Sans');
   textSize (25);
   textStyle(BOLD);
-  text ((tabela.get(0,1)), x - w / 2 + 15, 45);
+  text ((tabela.get(params.magia,1)), x - w / 2 + 15, 45);
   
   //Categoria//
   
@@ -123,7 +123,7 @@ function draw() {
   textStyle(BOLDITALIC);
   fill (139, 151, 250);
   
-  text ((tabela.get(0,3)), x - w / 2 + l, 70);
+  text ((tabela.get(params.magia,3)), x - w / 2 + l, 70);
   
   //Informações//
   
@@ -136,7 +136,7 @@ function draw() {
     //Variáveis//
   
   let spacing = 100;
-  var descriptions = [tabela.get(0,4), tabela.get(0,5), tabela.get(0,6), tabela.get(0,8)];
+  var descriptions = [tabela.get(params.magia,4), tabela.get(params.magia,5), tabela.get(params.magia,6), tabela.get(params.magia,8)];
   var imagens = [img1, img2, img3, img4];
   var num = descriptions.length;
   
