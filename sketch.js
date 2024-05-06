@@ -62,6 +62,7 @@ function draw() {
   let p6 = createP(tabela.get(params.magia,16));
   let p7 = createP(tabela.get(params.magia,17));
   let p8 = createP(tabela.get(params.magia,18));
+  let p9 = createP(tabela.get(params.magia,19));
   
   p1.addClass('corpo');
   p2.addClass('corpoBold');
@@ -71,6 +72,7 @@ function draw() {
   p6.addClass('corpoBold');
   p7.addClass('corpo');
   p8.addClass('corpoBold');
+  p9.addClass('corpo');
   
   p0.parent(innerDiv);
   p1.parent(innerDiv);
@@ -79,6 +81,9 @@ function draw() {
   p4.parent(innerDiv);
   pV.parent(innerDiv);
   p6.parent(innerDiv);
+  p7.parent(innerDiv);
+  p8.parent(innerDiv);
+  p9.parent(innerDiv);
   
   //Definindo Tamanhos//
   
